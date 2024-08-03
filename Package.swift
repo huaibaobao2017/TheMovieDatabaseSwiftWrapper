@@ -6,10 +6,9 @@ import PackageDescription
 let package = Package(
     name: "TMDBSwift",
     platforms: [
-        .iOS(.v15),
-        .tvOS(.v15),
-        .macOS(.v12),
-        .watchOS(.v8)
+        .iOS(.v9),
+        .tvOS(.v10),
+        .macOS(.v10_15),
     ],
     products: [
         .library(

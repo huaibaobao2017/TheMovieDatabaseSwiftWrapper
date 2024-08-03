@@ -23,7 +23,7 @@ final class GenresMDBTests: XCTestCase {
             expectation.fulfill()
         }
 
-        waitForExpectations(timeout: expectationTimeout, handler: nil)
+        waitForExpectations(timeout: expecationTimeout, handler: nil)
         XCTAssertNotNil(data)
     }
 
@@ -36,7 +36,7 @@ final class GenresMDBTests: XCTestCase {
             expectation.fulfill()
         }
 
-        waitForExpectations(timeout: expectationTimeout, handler: nil)
+        waitForExpectations(timeout: expecationTimeout, handler: nil)
         XCTAssertNotNil(data)
     }
 
@@ -49,7 +49,7 @@ final class GenresMDBTests: XCTestCase {
             expectation.fulfill()
         }
 
-        waitForExpectations(timeout: expectationTimeout, handler: nil)
+        waitForExpectations(timeout: expecationTimeout, handler: nil)
         XCTAssertGreaterThan(data?.count ?? 0, 0)
     }
 }

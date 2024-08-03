@@ -23,7 +23,7 @@ final class NetworksMDBTests: XCTestCase {
             expectation.fulfill()
         }
 
-        waitForExpectations(timeout: expectationTimeout, handler: nil)
+        waitForExpectations(timeout: expecationTimeout, handler: nil)
         XCTAssertEqual(data?.name, "Fuji TV")
         XCTAssertEqual(data?.id, 1.0)
     }

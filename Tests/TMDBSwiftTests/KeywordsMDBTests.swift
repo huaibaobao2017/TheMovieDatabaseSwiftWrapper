@@ -22,7 +22,7 @@ final class KeywordsMDBTests: XCTestCase {
             data = keyword
             expectation.fulfill()
         }
-        waitForExpectations(timeout: expectationTimeout, handler: nil)
+        waitForExpectations(timeout: expecationTimeout, handler: nil)
         XCTAssertNotNil(data)
     }
 
@@ -34,7 +34,7 @@ final class KeywordsMDBTests: XCTestCase {
             data = movie
             expectation.fulfill()
         }
-        waitForExpectations(timeout: expectationTimeout, handler: nil)
+        waitForExpectations(timeout: expecationTimeout, handler: nil)
         XCTAssertGreaterThan(data.count, 0)
     }
 }

@@ -7,4 +7,4 @@
 
 import Foundation
 
-let expectationTimeout: TimeInterval = 50
+let expecationTimeout: TimeInterval = 50

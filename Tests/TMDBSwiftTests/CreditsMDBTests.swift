@@ -22,7 +22,7 @@ final class CreditsMDBTests: XCTestCase {
             data = credits
             expectation.fulfill()
         }
-        waitForExpectations(timeout: expectationTimeout, handler: nil)
+        waitForExpectations(timeout: expecationTimeout, handler: nil)
         XCTAssertNotNil(data)
     }
 }

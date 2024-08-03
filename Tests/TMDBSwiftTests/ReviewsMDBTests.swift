@@ -22,7 +22,7 @@ final class ReviewsMDBTests: XCTestCase {
             data = responseData
             expectation.fulfill()
         }
-        waitForExpectations(timeout: expectationTimeout, handler: nil)
+        waitForExpectations(timeout: expecationTimeout, handler: nil)
         XCTAssertNotNil(data)
     }
 

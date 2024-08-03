@@ -24,7 +24,7 @@ final class FindMDBTests: XCTestCase {
             expectation.fulfill()
         })
 
-        waitForExpectations(timeout: expectationTimeout, handler: nil)
+        waitForExpectations(timeout: expecationTimeout, handler: nil)
         XCTAssertNotNil(data)
         guard let findData = data else { return }
         XCTAssertNotNil(findData.person_results)

@@ -23,7 +23,7 @@ final class CompanyMDBTests: XCTestCase {
             expectation.fulfill()
         }
 
-        waitForExpectations(timeout: expectationTimeout, handler: nil)
+        waitForExpectations(timeout: expecationTimeout, handler: nil)
         XCTAssertNotNil(data)
 
         XCTAssertEqual(data?.id, 5)
@@ -43,7 +43,7 @@ final class CompanyMDBTests: XCTestCase {
             expectation.fulfill()
         }
 
-        waitForExpectations(timeout: expectationTimeout, handler: nil)
+        waitForExpectations(timeout: expecationTimeout, handler: nil)
         XCTAssertGreaterThan(data.count, 0)
     }
 }
