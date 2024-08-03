@@ -8,20 +8,9 @@
 
 import Foundation
 
-/// A structure representing the API configuration for the current session.
 public struct TMDBConfig {
     /// API key to be used for queries.
-    public static var apikey: String?
-
-    /// The language provided to all network requests, defaults to ``SupportedLanguage.en``.
-    public static var language: Language = .en
-
+    public static var apikey: String!
     /// API base url.
-    static var apiUrl = "https://api.themoviedb.org/3"
-
-    /// API scheme.
-    static let apiScheme = "https"
-
-    /// API host.
-    static let apiHost = "api.themoviedb.org"
+    public static var apiUrl = "https://api.themoviedb.org/3"
 }
